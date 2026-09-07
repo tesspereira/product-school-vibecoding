@@ -7,10 +7,10 @@
 _Tick the scenario you built in Lab 1 (the same one you selected in the lab guide), or name your own._
 
 - [ ] Scenario 01 · The Retention Engine
-- [x] Scenario 02 · The Internal Tool Nobody Uses
+- [ ] Scenario 02 · The Internal Tool Nobody Uses
 - [ ] Scenario 03 · The Marketplace Trust Problem
 - [ ] Scenario 04 · The Dashboard Nobody Reads
-- [ ] My own (instructor-approved): Stackline
+- [x] My own (instructor-approved): Stackline
 
 ## Launch path
 

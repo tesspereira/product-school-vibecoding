@@ -39,11 +39,11 @@ Don't change anything else in the project or touch the underlying logic.
 
 ## Reusable techniques learned
 
-- _____
+- - Separating expansion from behavior (Step 1 vs Step 2) keeps each prompt focused — screens get built without logic bleeding in, and logic gets applied without triggering unplanned screen changes.
 - _____
 
 ## What broke (and the fix)
 
 _Where a single mega-prompt failed and chaining fixed it._
 
-_____
+A single mega-prompt for this app produced a build with no clear kill switch — the search-loop pivot wasn't observable, so there was no signal telling us the catalog-first approach wasn't working. It also left the "Unapproved" tool path as a dead end: an employee could see a tool was unapproved but had nowhere to go from there (no alternative, no explanation, no next action). Chaining fixed both — Step 1 forced the pivot screens (search-loop state, alternative paths) to be built explicitly as their own step rather than getting lost inside a broader "add the catalog" prompt, and Step 2 forced every terminal state, including "Unapproved," to resolve to a defined next action instead of silently stopping.
